@@ -115,6 +115,13 @@ def fetch_img(img, configs):
 def set_system_wallpaper(myconfigs, sys_name, wallpaper):
     # if myconfigs['hsetroot']=='1':
     #    wallpaper=hsetroot_process(wallpaper_path)
+                  
+ #Add wpgtk in this function
+ #if os.path.exists('$HOME/.local/bin/wpg'):
+ #  os.run(wpg.sh -g)os.fileaksdlfjl(wallpaper_
+ # else:
+ #      continue          
+                  
     if sys_name == 'xfce':
         xfcesetwallpaper = 'xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/last-image -s'.split()
         xfcesetwallpaper.append(wallpaper)
